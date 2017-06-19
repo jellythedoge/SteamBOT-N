@@ -37,7 +37,6 @@ client.on('loggedOn', () => {
 
 	community.setCookies(cookies);
 	community.startConfirmationChecker(10000, 'EDITME'); //steam identity secret
-	emitter.setMaxListeners(20);
 
 	client.on('friendRelationship', (steamid, relationship) => {
         if (relationship === 2) {
@@ -114,22 +113,25 @@ friends.on("friendMsg", function(user, msg, type){
     var reply = getreplymessage(msg);
     if (reply != ''){
         friends.sendMessage(user, getreplymessage(msg));
+    }
+  }
+}
+,);
 
 //Chat Commands
 //Made by ME
 //When get Message run command
 // Messages:
+// Messages:
 friends.on("friendMsg", function(user, msg, type){
   if(type == Steam.EChatEntryType.ChatMsg){
+
     if(msg == "!IDLE"){
       console.log('COMMAND ACCEPTED!')
-	  client.gamesPlayed(["Idling GAMES", 440]); //Edit this to
+	   client.gamesPlayed(["Idling GAMES", 440]);//Edit this to change games played upon idle command
     }
         if(msg == "!IDLESTOP"){
       client.gamesPlayed([ ]);
     }
-        if(msg == "how are you"){
-      friends.sendMessage(user, "Im doing great!");
-    }
-}
-})}}})
+  }
+})
