@@ -2,6 +2,8 @@
 An open  source steam bot written in Node.js
 Can be used on Windows7&UP/DebianBasedLinuxOS/MacOS
 
+A Steam Chat/Idle/Basic Trade BOT
+
 REQUIRES STEAM AUTH APP!!!!
 
 Step 1: To use start by downloading Node.js
