@@ -28,9 +28,8 @@ client.on('loggedOn', () => {
 	client.gamesPlayed(["EDITME", 440]); //delete this line to remove feature
             //custom game played ^^| =>  Steam game id of real game played, used for idling
             //currently it only plays Team Fortress 2, Try changing it :)
-	    //to add more than 1 game do this | client.gamesPlayed(["EDITME", 440, 730]);
-	    //i used CSGO APP id as an example, That is how you add more than one game.
-
+			//to add more than 1 game do this | client.gamesPlayed(["EDITME", 440, 730]);
+			//i used CSGO APP id as an example, That is how you add more than one game.
 
 
 	console.log('[STEAM]Now idling selected games');
@@ -96,7 +95,7 @@ var returndefaultmessage = false; //default is false. set to true if you want to
 var messageresponse = [
     [['ping', 'pinger', 'pingas'], 'Pong!'],
     [['bye', 'goodbye'], 'GoodBye'],
-	[['hello', 'hey', 'hi', 'sup', 'hallo'], 'Hello!'],
+	[['hello', 'hey', 'sup', 'hi', 'sup', 'hallo'], 'Hello!'],
 ]
 //lower case only. function converts incoming messages to lower case
 //try adding more responses
