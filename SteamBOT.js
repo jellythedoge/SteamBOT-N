@@ -95,7 +95,7 @@ var returndefaultmessage = false; //default is false. set to true if you want to
 var messageresponse = [
     [['ping', 'pinger', 'pingas'], 'Pong!'],
     [['bye', 'goodbye'], 'GoodBye'],
-	[['hello', 'hey', 'hi', 'sup', 'hallo'], 'Hello!'],
+	[['hello', 'hey', 'sup', 'hi', 'sup', 'hallo'], 'Hello!'],
 ]
 //lower case only. function converts incoming messages to lower case
 //try adding more responses
