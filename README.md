@@ -99,4 +99,5 @@ What you need to grab is Shared_Secret and Identity_Secret.
 Than Save on Desktop.
 
 Step 4: Edit the SteamBOT with your info.
+
 Step 5: Run with node NameOfFile | If you run from double clicking please dont report any crashes as it is your fault for not reading.
