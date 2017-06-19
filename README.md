@@ -97,6 +97,7 @@ Numbers and letters:
 
 What you need to grab is Shared_Secret and Identity_Secret.
 Than Save on Desktop.
+_____________________________________________________________________________________________________________________________
 
 Step 4: Edit the SteamBOT with your info.
 
