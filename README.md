@@ -98,13 +98,19 @@ The file you are looking for is called Steamguard-(Your Steam64 ID)
 It should be layed out like.
 
 something: # This is Number 1 | Lets say this says Shared_Secret
+
 something:
+
 something:
+
 something:
 
 Numbers and letters: # This is Number 1's ID number AKA the Shared_Secret
+
 Numbers and letters:
+
 Numbers and letters:
+
 Numbers and letters:
 
 What you need to grab is Shared_Secret and Identity_Secret.
