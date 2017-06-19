@@ -84,9 +84,12 @@ manager.on('newOffer', (offer) => {
 });})})})
 
 //chat stuff
-//Function made by Caret
-//Function sends Messages
+//Function(s) made by Caret
+//Function(s) (help) send Messages
 //chat functions
+var returndefaultmessage = false; //default is false. set to true if you want to return a standard message
+//default message even if a match is not found in messageresponse list
+
 var messageresponse = [
     [['ping', 'pinger', 'pingas'], 'Pong!'],
     [['bye', 'goodbye'], 'GoodBye'],
@@ -96,25 +99,37 @@ var messageresponse = [
 //try adding more responses
 
 function getreplymessage(usermessage) {
+    console.log('[STEAM]We have received a message!');
     usermessage = usermessage.toLowerCase();
+	if (usermessage == 'help') {
+		var messagelist = "Possible messages are: ";
+		for (var i_a = 0; i_a < messageresponse.length; i_a++ ) {
+			for (var i_b = 0; i_b < messageresponse[i_a][0].length; i_b++ ) {
+				messagelist += messageresponse[i_a][0][i_b] + ', '
+			}
+		}
+		return [true, messagelist];
+	}
     for (var i_a = 0; i_a < messageresponse.length; i_a++ ) {
         for (var i_b = 0; i_b < messageresponse[i_a][0].length; i_b++ ) {
             if (usermessage == messageresponse[i_a][0][i_b]) {
-                return messageresponse[i_a][1];
+                return [true, messageresponse[i_a][1]];
             }
         }
     }
-	console.log('[STEAM]We have received a message!');
-    return 'EDITME'; //edit this line to have a custom message sent to whoever messaged you :)
+    return [false, 'DEFAULT']; //returned message when no matches could be found
 }
 
 friends.on("friendMsg", function(user, msg, type){
-  if(type == Steam.EChatEntryType.ChatMsg){
-    var reply = getreplymessage(msg);
-    if (reply != ''){
-        friends.sendMessage(user, getreplymessage(msg));
+    if(type == Steam.EChatEntryType.ChatMsg){
+        var reply = getreplymessage(msg);
+        if (reply[0]){//is not the default return for no match (there is a match)
+            friends.sendMessage(user, reply[1]);
+        }
+        else if (returndefaultmessage) {
+            friends.sendMessage(user, reply[1]);
+        }
     }
-  }
 }
 ,);
 
