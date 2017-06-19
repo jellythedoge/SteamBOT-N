@@ -11,9 +11,13 @@ Step 2: Make a directory to store the bot, In this example i will use this.
 
 Step 3: Open a Terminal/Command Prompt and type the following.
 Windows | npm install steam
+
 npm install steam-user
+
 npm install steam-totp
+
 npm install steamcommunity
+
 npm install steam-tradeoffer-manager
 
 
@@ -22,9 +26,13 @@ Now once in the directory since this program is different for Linux than windows
 The program has to be run in the same directory as the modules so do the same as windows from here on.
 _____________________________________________________________________________________________________________________________
 npm install steam
+
 npm install steam-user
+
 npm install steam-totp
+
 npm install steamcommunity
+
 npm install steam-tradeoffer-manager
 
 Mac | Ok i havent tested this one since i do not use /own a MacOS.
@@ -35,9 +43,13 @@ Now once in the directory since this program is different for MacOSt than Window
 The program has to be run in the same directory as the modules so do the same as windows from here on.
 _____________________________________________________________________________________________________________________________
 npm install steam
+
 npm install steam-user
+
 npm install steam-totp
+
 npm install steamcommunity
+
 npm install steam-tradeoffer-manager
 _____________________________________________________________________________________________________________________________
 
