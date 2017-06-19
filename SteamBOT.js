@@ -122,15 +122,16 @@ friends.on("friendMsg", function(user, msg, type){
 //Made by ME
 //When get Message run command
 // Messages:
-// Messages:
 friends.on("friendMsg", function(user, msg, type){
   if(type == Steam.EChatEntryType.ChatMsg){
 
     if(msg == "!IDLE"){
       console.log('COMMAND ACCEPTED!')
-	   client.gamesPlayed(["Idling GAMES", 440]);//Edit this to change games played upon idle command
+	  client.gamesPlayed([ ]);
+	  client.gamesPlayed(["Idling GAMES", 440]);//Edit this to change games played upon idle command
     }
         if(msg == "!IDLESTOP"){
+	  console.log('COMMAND ACCEPTED!')
       client.gamesPlayed([ ]);
     }
   }
