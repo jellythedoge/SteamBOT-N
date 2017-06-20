@@ -12,6 +12,9 @@ Step 2: Make a directory to store the bot, In this example i will use this.
 ~/Desktop/Projects/STEAM_BOT$ 
 
 Step 3: Open a Terminal/Command Prompt and type the following.
+
+_____________________________________________________________________________________________________________________________
+
 Windows | npm install steam
 
 npm install steam-user
@@ -22,11 +25,13 @@ npm install steamcommunity
 
 npm install steam-tradeoffer-manager
 
+_____________________________________________________________________________________________________________________________
 
 Linux | cd Path/to/directory
+
 Now once in the directory since this program is different for Linux than windows.
 The program has to be run in the same directory as the modules so do the same as windows from here on.
-_____________________________________________________________________________________________________________________________
+
 npm install steam
 
 npm install steam-user
@@ -36,15 +41,18 @@ npm install steam-totp
 npm install steamcommunity
 
 npm install steam-tradeoffer-manager
+
+_____________________________________________________________________________________________________________________________
 
 Mac | Ok i havent tested this one since i do not use /own a MacOS.
 So the following instructions are copied from Linux instructions
 
 cd Path/to/directory
+
 Now once in the directory since this program is different for MacOSt than Windows.
 The program has to be run in the same directory as the modules so do the same as windows from here on.
-_____________________________________________________________________________________________________________________________
-npm install steam
+
+znpm install steam
 
 npm install steam-user
 
@@ -53,18 +61,23 @@ npm install steam-totp
 npm install steamcommunity
 
 npm install steam-tradeoffer-manager
-_____________________________________________________________________________________________________________________________
 
 Once you have done all of this you need to extract from your phone a certain file.
+
+_____________________________________________________________________________________________________________________________
 
 Android | ROOTED
  
 What you need:
  
 A Rooted Android Device
+
 A USB Cable
+
 A App called Root Browser
+
 A PC
+
 A Text Editor for your PC
  
 Step 1: Navigate to /data/data/com.valvesoftware.android.steam.community/files/Steam-(Your Steam64 ID) or Steamguard-(Your Steam64 ID) using Root Browser
