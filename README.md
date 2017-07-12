@@ -1,6 +1,6 @@
 # SteamBOT-N
 An open  source steam bot written in Node.js
-Can be used on Windows7&UP/DebianBasedLinuxOS/MacOS
+Can be used on Windows7&UP/DebianBasedLinuxOS/MacOS/Android
 
 A Steam Chat/Idle/Basic Trade BOT
 
@@ -52,7 +52,7 @@ cd Path/to/directory
 Now once in the directory since this program is different for MacOSt than Windows.
 The program has to be run in the same directory as the modules so do the same as windows from here on.
 
-znpm install steam
+npm install steam
 
 npm install steam-user
 
@@ -61,6 +61,45 @@ npm install steam-totp
 npm install steamcommunity
 
 npm install steam-tradeoffer-manager
+
+_____________________________________________________________________________________________________________________________
+
+Android | Ok this is a but buggy as i only tested once, So these instructions are not very detailed.
+Infact i recommend Heroku as it is alot less buggy and is deployed on a web server.
+
+First off start by downloading Termux from the Play Market.
+
+Once installed type these commands.
+
+packages install apt
+
+apt update
+
+apt upgrade
+
+apt install nodejs
+
+npm install steam
+
+npm install steam-user
+
+npm install steam-totp
+
+npm install steamcommunity
+
+npm install steam-tradeoffer-manager
+
+Once this is done you to install VIM
+
+apt install vim
+
+After installing VIM you have to do this exactly...
+
+download or copy the bot into the file and save but you cant run it yet as you need to follow the next lot of instructions.
+
+Support fromm me with android stops here, If you manage to do it and would like to commit a better read me than please do so.
+
+_____________________________________________________________________________________________________________________________
 
 Once you have done all of this you need to extract from your phone a certain file.
 
